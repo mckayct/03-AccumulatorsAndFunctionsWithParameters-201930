@@ -25,8 +25,8 @@ def run_test_sum_squares():
     print('--------------------------------------------------')
 
     # Test 1:
-    expected = 55
-    answer = sum_squares(5)
+    expected = 14
+    answer = sum_squares(3)
     print('Test 1 expected:', expected)
     print('       actual:  ', answer)
 
