@@ -6,18 +6,43 @@ This module demonstrates simple LOOPS of the form:
 and also USING OBJECTS.
 
 Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher, Mark Hays,
-         Aaron Wilkin, their colleagues, and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         Aaron Wilkin, their colleagues, and Colton McKay.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 import rosegraphics as rg
 
 
 def main():
+    test_print_sequence1()
     """ Calls the other functions to demonstrate and/or test them. """
     # Test your functions by putting calls to them here:
 
+def test_print_sequence1():
+    print()
+    print('--------------------------------------------------')
+    print('testing print_sequence1:')
+    print('--------------------------------------------------')
 
-def print_sequence1():
+
+    # Test 1:
+    expected = 0, 10, 20, 30, 40
+    answer = print_sequence1(5)
+    print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 2:
+    expected = 0, 10
+    answer = print_sequence1(2)
+    print('Test 2 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 3:
+    expected = 0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140
+    answer = print_sequence1(15)
+    print('Test 3 expected:', expected)
+    print('       actual:  ', answer)
+
+def print_sequence1(n):
     """
     Prints:
        0
@@ -38,6 +63,34 @@ def print_sequence1():
     print('Running print_sequence1:')
     print('--------------------------------------------------')
 
+    for k in range(n):
+        answer = (k*10)
+    return answer
+
+def test_draw_circles1():
+    print()
+    print('--------------------------------------------------')
+    print('testing draw_cicrcles:')
+    print('--------------------------------------------------')
+
+    # Test 1:
+    expected = 0, 10, 20, 30, 40
+    answer = print_sequence1(5)
+    print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 2:
+    expected = 0, 10
+    answer = print_sequence1(2)
+    print('Test 2 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 3:
+    expected = 0, 10, 20, 30, ..., 140
+    answer = print_sequence1(15)
+    print('Test 3 expected:', expected)
+    print('       actual:  ', answer)
+
 
 def draw_circles1():
     """
@@ -57,7 +110,6 @@ def draw_circles1():
     print('--------------------------------------------------')
     print('Running draw_circles1:  See graphics window')
     print('--------------------------------------------------')
-
 
 def print_sequence2():
     """
